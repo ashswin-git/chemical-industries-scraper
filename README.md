@@ -1,22 +1,31 @@
 # Chemical Industries Scraper
 
-This project is designed to scrape data from various sources pertaining to chemical industries.
+![Python](https://img.shields.io/badge/Python-3-3776AB?logo=python&logoColor=white)
+![Status](https://img.shields.io/badge/status-early%20stage-orange)
 
-## Setup Instructions
+A project to collect data about chemical industries from various sources.
 
-1. Clone the repository:
-   git clone https://github.com/ashswin-git/chemical-industries-scraper.git
+## Status
 
-2. Navigate to the project directory:
-   cd chemical-industries-scraper
+The repository currently contains only `demo.py`, which shows the intended usage. The `scraper` package (`ChemicalIndustriesScraper`) is not in the repo yet, so the demo will not run until it is added.
 
-3. Install the necessary dependencies:
-   pip install -r requirements.txt
+## Intended usage
 
-4. Set up your configuration in `config.yaml`.
+```python
+from scraper import ChemicalIndustriesScraper
 
-5. Run the scraper:
-   python scraper/main.py
+scraper = ChemicalIndustriesScraper()
+for item in scraper.scrape():
+    print(item)
+```
 
-## Contributing
-Please read `CONTRIBUTING.md` for guidelines on how to contribute to this project.
+## Built with
+
+- **Language:** Python 3
+
+## Project structure
+
+```
+demo.py     usage demo
+README.md
+```
